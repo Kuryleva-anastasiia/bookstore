@@ -24,6 +24,34 @@
         &__img
             &-wrap
                 margin-top: 26px
+@media ( min-width: 992px )
+    .header
+        &-wrap
+            &__button:hover
+                background-color: $default-color
+                color: $light-color
+                transition: 400ms
+    .nav
+        &__item::after
+            content: ""
+            display: block
+            height: 2px
+            width: 0%
+            background-color: $dark-color
+            transition: width 0.3s ease-in-out
+        &__item:hover
+            &:after
+                width: 100%
+    .main
+        &-content
+            &__btn
+                &_transparent:hover
+                    background-color: $default-color
+                    color: $light-color
+                    transition: 400ms
+                &_fill:hover
+                    background-color: darken($default-color, 20%)
+                    transition: 400ms
 @media ( max-width: 768px )
     @keyframes nav-wrap
         0%
@@ -35,8 +63,8 @@
     .container
         max-width: 560px
     .header
-        padding: 17px 0
         &-wrap
+            padding: 17px 0
             &__nav
                 color: $light-color
                 flex-direction: column
@@ -100,7 +128,8 @@
     .menu-opened
         overflow: hidden
     .main
-        padding: 100px 0 100px
+        &-wrap
+            padding: 100px 0 100px
         &-content
             &__title
                 font-size: 32px
@@ -129,9 +158,6 @@
                 &-wrap
                     left: 0
     .main
-        &__img
-            &-wrap
-                background-color: transparent
         &-content
             &__btn
                 width: 70%
