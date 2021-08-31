@@ -1,0 +1,160 @@
+
+@media ( max-width: 1200px )
+    .container
+        max-width: 960px
+    .main
+        &__img
+            &-wrap
+                padding: 80px 70px
+        &-content
+            max-width: 550px
+            &__description
+                margin-bottom: 40px
+            &__author
+                margin-bottom: 30px
+@media ( max-width: 992px )
+    .container
+        max-width: 760px
+    .main
+        &-wrap
+            flex-direction: column
+            align-items: center
+        &-content
+            text-align: center
+        &__img
+            &-wrap
+                margin-top: 26px
+@media ( max-width: 768px )
+    @keyframes nav-wrap
+        0%
+            display: none
+            opacity: 0
+        100%
+            display: block
+            opacity: 1
+    .container
+        max-width: 560px
+    .header
+        padding: 17px 0
+        &-wrap
+            &__nav
+                color: $light-color
+                flex-direction: column
+                align-items: center
+                margin: 0
+                &-wrap
+                    display: none
+                    flex-direction: column
+                    align-items: center
+                    position: fixed
+                    top: 64px
+                    right: 0
+                    left: 45%
+                    bottom: 0
+                    background-color: $dark-color
+                    margin: 0
+                    padding-top: 10%
+                    overflow-y: scroll
+                    &_mobile
+                        display: flex
+                        animation: nav-wrap 500ms linear 0s 1 normal forwards
+            &__button
+                border-color: $light-color
+                color: $light-color
+    .nav
+        &__item:not(:last-child)
+            margin-right: 0
+        &__item
+            margin-bottom: 30px
+        &__link
+            font-size: 18px
+    .menu-btn
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 17px
+        border: none
+        background-color: $light-color
+        padding: 0
+        cursor: pointer
+        &__line
+            height: 2px
+            width: 22px
+            background-color: #3A4C66
+            border-radius: 8px
+            transform: rotate(0%)
+            transition: transform 500ms 0s linear
+            &_top_rotate
+                position: absolute
+                transform: rotate(45deg)
+                top: 6px
+                right: 0
+            &_middle_hidden
+                display: none
+            &_bottom_rotate
+                position: absolute
+                transform: rotate(-45deg)
+                top: 6px
+                right: 0
+    .menu-opened
+        overflow: hidden
+    .main
+        padding: 100px 0 100px
+        &-content
+            &__title
+                font-size: 32px
+                line-height: 40px
+                letter-spacing: 0.2px
+                margin-bottom: 24px
+            &__author
+                font-size: 16px
+                line-height: 24px
+                letter-spacing: 0.2px
+                margin-bottom: 32px
+            &__description
+                font-size: 16px
+                line-height: 23px
+                margin-bottom: 17px
+            &__btn
+                font-size: 16px
+                line-height: 22px
+
+@media ( max-width: 576px )
+    .container
+        max-width: 85%
+    .header
+        &-wrap
+            &__nav
+                &-wrap
+                    left: 0
+    .main
+        &__img
+            &-wrap
+                background-color: transparent
+        &-content
+            &__btn
+                width: 70%
+                &_fill
+                    margin-bottom: 15px
+                    margin-right: 0
+        &__img
+            width: 143px
+            height: 214px
+            box-shadow: 0px 11px 14px rgba(0, 0, 0, 0.08)
+            &-wrap
+                padding: 68px 59px
+@media ( max-width: 380px )
+    .main
+        &-content
+            &__btn
+                max-width: 180px
+                &_fill
+                    padding: 9px 20px
+                &_transparent
+                    padding: 7px 29px
+@media ( max-width: 340px )
+    .main
+        &-content
+            &__description
+                width: 102%

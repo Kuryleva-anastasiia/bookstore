@@ -25,14 +25,23 @@
               alt="Логотип: ehya"
               class="header-wrap__img"
           /></a>
-          <ul class="nav header-wrap__nav">
-            <li class="nav__item">
-              <a href="#" class="nav__link">Рекомендации</a>
-            </li>
-            <li class="nav__item"><a href="#" class="nav__link">Книги</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Блог</a></li>
-          </ul>
-          <button class="button header-wrap__button">Получить</button>
+          <div class="header-wrap__nav-wrap">
+            <ul class="nav header-wrap__nav">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Рекомендации</a>
+              </li>
+              <li class="nav__item"><a href="#" class="nav__link">Книги</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Блог</a></li>
+            </ul>
+            <button class="button header-wrap__button">Получить</button>
+          </div>
+          <!-- /.header-wrap__nav-wrap -->
+          <button class="menu-btn header-wrap__menu-btn">
+            <span class="menu-btn__line menu-btn__line_top"></span>
+            <span class="menu-btn__line menu-btn__line_middle"></span>
+            <span class="menu-btn__line menu-btn__line_bottom"></span>
+          </button>
+          <!-- /.menu-btn -->
         </div>
         <!-- /.header-wrap -->
       </div>
@@ -43,7 +52,9 @@
         <div class="main-wrap">
           <div class="main-content">
             <h1 class="main-content__title">
-              Design Theory: The Psychology of Graphic Design Pricing
+              <span class="main-content__title main-content__title_bright"
+                >Design Theory:</span
+              ><br />The Psychology of<br />Graphic Design Pricing
             </h1>
             <span class="main-content__author">КНИГА МИШЕЛЯ ЯНГА</span>
             <!-- /.main-content__author -->
@@ -53,11 +64,14 @@
               стратегиями ценообразования на творческую работу.
             </p>
             <!-- /.main-content__description -->
-            <div class="main-content__buttons">
-              <button class="button main-content__btn">КУПИТЬ СЕЙЧАС</button>
-              <button class="button main-content__btn">ЧИТАТЬ ДЕМО</button>
-            </div>
-            <!-- /.main-content__buttons -->
+            <button class="button main-content__btn main-content__btn_fill">
+              КУПИТЬ СЕЙЧАС
+            </button>
+            <button
+              class="button main-content__btn main-content__btn_transparent"
+            >
+              ЧИТАТЬ ДЕМО
+            </button>
           </div>
           <!-- /.main-content -->
           <div class="main__img-wrap">
@@ -73,5 +87,6 @@
       </div>
       <!-- /.container -->
     </section>
+    <script src="js/main.js"></script>
   </body>
 </html>
