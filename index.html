@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
+    <!-- Слайдер  -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- Иконочный шрифт -->
+    <link rel="stylesheet" href="css/iconsfont.min.css" />
     <!-- Стили  -->
     <link rel="stylesheet" href="css/style.css" />
     <title>Bookstore - ehya</title>
@@ -352,6 +356,225 @@
       <!-- /.container -->
     </section>
     <!-- /.books-top -->
+    <section class="collections">
+      <div class="container">
+        <div class="collections__wrap">
+          <!-- Slider main container -->
+          <div class="swiper collections__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper collections__slider-wrap">
+              <!-- Slides -->
+              <div class="swiper-slide collections-slide collections__slide">
+                <div class="collections-slide__content">
+                  <img
+                    src="img/collections/presentation.svg"
+                    alt="Icon: presentation"
+                    class="collections-slide__img"
+                  />
+                  <h4 class="collections-slide__title">Бизнес & Финансы</h4>
+                  <span class="collections-slide__description"
+                    >Книги про мир бизнеса</span
+                  >
+                </div>
+                <!-- /.collections-slide__content -->
+              </div>
+              <!-- swiper-slide -->
+              <div class="swiper-slide collections-slide collections__slide">
+                <div class="collections-slide__content">
+                  <img
+                    src="img/collections/diamond.svg"
+                    alt="Icon: diamond"
+                    class="collections-slide__img"
+                  />
+                  <h4 class="collections-slide__title">Самомотиватия</h4>
+                  <span class="collections-slide__description"
+                    >Книги о мотивации</span
+                  >
+                </div>
+                <!-- /.collections-slide__content -->
+              </div>
+              <!-- swiper-slide -->
+              <div class="swiper-slide collections-slide collections__slide">
+                <div class="collections-slide__content">
+                  <img
+                    src="img/collections/book.svg"
+                    alt="Icon: book"
+                    class="collections-slide__img"
+                  />
+                  <h4 class="collections-slide__title">Романы Теленовеллы</h4>
+                  <span class="collections-slide__description"
+                    >Книги с крутыми историями</span
+                  >
+                </div>
+                <!-- /.collections-slide__content -->
+              </div>
+              <!-- swiper-slide -->
+              <div class="swiper-slide collections-slide collections__slide">
+                <div class="collections-slide__content">
+                  <img
+                    src="img/collections/skills.svg"
+                    alt="Icon: skills"
+                    class="collections-slide__img"
+                  />
+                  <h4 class="collections-slide__title">Навыки будущего</h4>
+                  <span class="collections-slide__description"
+                    >Книги для самоподготовки
+                  </span>
+                </div>
+                <!-- /.collections-slide__content -->
+              </div>
+              <!-- swiper-slide -->
+            </div>
+            <!-- swiper-wrapper collections__slider-wrap -->
+          </div>
+          <!-- collections__slider -->
+          <button
+            class="button collections__button collections__button_next"
+          ></button>
+          <button
+            class="button collections__button collections__button_prev"
+          ></button>
+        </div>
+        <!-- /.collections__wrap -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <section class="unreleased">
+      <div class="container">
+        <div class="unreleased__wrap">
+          <button
+            class="button unreleased__button unreleased__button_next"
+          ></button>
+          <button
+            class="button unreleased__button unreleased__button_prev"
+          ></button>
+          <h2 class="unreleased__title">Неизданные книги</h2>
+
+          <div class="swiper unreleased__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper unreleased__slider-wrap">
+              <!-- Slides -->
+              <div class="swiper-slide unreleased-slide unreleased__slide">
+                <img
+                  src="img/unpublished/logo-modernism.jpg"
+                  alt="Book: Logo Modernism"
+                  class="unreleased-slide__img"
+                />
+              </div>
+              <!-- swiper-slide -->
+              <div class="swiper-slide unreleased-slide unreleased__slide">
+                <img
+                  src="img/unpublished/the-overdue-life.jpg"
+                  alt="Book: The Overdue Life Of Amy Byler"
+                  class="unreleased-slide__img"
+                />
+              </div>
+              <!-- swiper-slide -->
+              <div class="swiper-slide unreleased-slide unreleased__slide">
+                <img
+                  src="img/unpublished/making-short-films.jpg"
+                  alt="Book: Making Short Films"
+                  class="unreleased-slide__img"
+                />
+              </div>
+              <!-- swiper-slide -->
+              <div class="swiper-slide unreleased-slide unreleased__slide">
+                <img
+                  src="img/unpublished/on-web-typography.jpg"
+                  alt="Book: On Web Typography"
+                  class="unreleased-slide__img"
+                />
+              </div>
+              <!-- swiper-slide -->
+              <div class="swiper-slide unreleased-slide unreleased__slide">
+                <img
+                  src="img/unpublished/after-the-end.jpg"
+                  alt="Book: After The End"
+                  class="unreleased-slide__img"
+                />
+              </div>
+              <!-- swiper-slide -->
+            </div>
+            <!-- swiper-wrapper unreleased__slider-wrap -->
+          </div>
+          <!-- unreleased__slider -->
+        </div>
+        <!-- /.unreleased-wrap -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <section class="authors">
+      <div class="container">
+        <div class="authors__wrap">
+          <div class="authors__title-wrap">
+            <h2 class="authors__title">История Автора</h2>
+            <p class="authors__description">
+              Это раздел авторского рассказа. Каждую неделю мы стараемся
+              рассказать вам историю писателя. Расскажем всем о&nbsp;закулисье
+              их книг.
+            </p>
+          </div>
+          <!-- /.authors__title-wrap -->
+          <div class="authors__video-wrap">
+            <div class="authors__video-card authors__video-card_big">
+              <img
+                src="img/authors/author-1.jpg"
+                alt="Author's image"
+                class="authors__video-img authors__video-img_big"
+              />
+            </div>
+            <!-- /.authors__video-card -->
+            <div class="authors__video-card">
+              <img
+                src="img/authors/author-2.jpg"
+                alt="Author's image"
+                class="authors__video-img"
+              />
+              <div class="authors__video-description">
+                <span class="authors__name">Emelda Scandroot</span>
+                <i class="authors__icon far fa-bookmark"></i>
+                <span class="authors__inscription">Author of Books Tittle</span>
+              </div>
+              <!-- /.authors__video-description -->
+            </div>
+            <!-- /.authors__video-card -->
+            <div class="authors__video-card">
+              <img
+                src="img/authors/author-3.jpg"
+                alt="Author's image"
+                class="authors__video-img"
+              />
+              <div class="authors__video-description">
+                <span class="authors__name">Mar Rueda</span>
+                <i class="authors__icon far fa-bookmark"></i>
+                <span class="authors__inscription">Author of Books Tittle</span>
+              </div>
+              <!-- /.authors__video-description -->
+            </div>
+            <!-- /.authors__video-card -->
+            <div class="authors__video-card">
+              <img
+                src="img/authors/author-4.jpg"
+                alt="Author's image"
+                class="authors__video-img"
+              />
+              <div class="authors__video-description">
+                <span class="authors__name">Nembo Lukeni</span>
+                <i class="authors__icon far fa-bookmark"></i>
+                <span class="authors__inscription">Author of Books Tittle</span>
+              </div>
+              <!-- /.authors__video-description -->
+            </div>
+            <!-- /.authors__video-card -->
+          </div>
+          <!-- /.authors__video-wrap -->
+        </div>
+        <!-- /.authors__wrap -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
