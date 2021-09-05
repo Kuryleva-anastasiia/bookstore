@@ -41,6 +41,9 @@
                 width: 30%
                 &_big
                     width: 100%
+    .brands
+        &__img:nth-child(n+11)
+            display: none
 @media ( max-width: 992px )
     .container
         max-width: 760px
@@ -60,6 +63,9 @@
         &__description
             font-size: 18px
             line-height: 25px
+    .brands
+        &__img:nth-child(n+9)
+            display: none
 @media ( min-width: 992px )
     .header
         &-wrap
@@ -120,6 +126,15 @@
                 background-image: url(../img/arrow-left_grey.svg)
                 transition: 300ms
                 border-color: $text-color
+    .authors
+        &__video
+            &-icon:hover
+                color: $default-color
+            &-icon
+                &_big:hover
+                    color: $light-color
+                    background-color: $default-color
+                    transition: 300ms
 
 @media ( max-width: 768px )
     @keyframes nav-wrap
@@ -319,6 +334,7 @@
             text-align: center
             font-size: 28px
             line-height: 36px
+            max-width: 100%
         &__button
             height: 48px
             width: 48px
@@ -330,7 +346,7 @@
                 left: 35%
     .authors
         &__wrap
-            padding: 44px 0
+            padding: 44px 0 130px
         &__title
             margin-top: 0
             margin-bottom: 24px
@@ -357,6 +373,18 @@
                     height: 210px
                 &:not(:last-child)
                     margin-right: 0
+            &-icon
+                font-size: 23px
+                line-height: 27px
+                &_big
+                    height: 56px
+                    width: 56px
+                    font-size: 19px
+                    line-height: 22px
+    .brands
+        &__img:nth-child(n+7)
+            display: none
+
 @media ( max-width: 576px )
     .container
         max-width: 89%
@@ -405,6 +433,9 @@
             &-description
                 flex-direction: column
                 align-items: center
+            &-img
+                &_big
+                    object-position: center
         &__name
             font-size: 16px
             line-height: 20px
@@ -416,6 +447,23 @@
             font-size: 12px
             line-height: 14px
             order: 1
+    .brands
+        &__wrap
+            padding: 37px 0
+        &__title
+            font-size: 24px
+            line-height: 30px
+            margin-bottom: 37px
+        &__img
+            width: 45%
+            margin-bottom: 22px
+            &_h
+                &_28
+                    height: 28px
+                &_22
+                    height: 22px
+                &_18
+                    height: 18px
 @media ( max-width: 380px )
     .main
         &-content
