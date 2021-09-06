@@ -44,6 +44,23 @@
     .brands
         &__img:nth-child(n+11)
             display: none
+    .blog
+        &-right
+            &__title
+                font-size: 18px
+                line-height: 20px
+    .subscribe
+        &__wrap
+            flex-direction: column
+            align-items: flex-start
+            &::before
+                top: 16%
+                right: -69%
+            &::after
+                left: -70%
+                bottom: 45px
+        &__title
+            margin-bottom: 32px
 @media ( max-width: 992px )
     .container
         max-width: 760px
@@ -66,6 +83,30 @@
     .brands
         &__img:nth-child(n+9)
             display: none
+    .blog
+        &__title
+            max-width: 60%
+        &__cards
+            flex-direction: column
+        &__left
+            margin-right: 0
+            margin-bottom: 28px
+        &-left
+            &__img
+                width: 100%
+            &__info
+                max-width: 100%
+            &__title
+                max-width: 100%
+        &-right
+            &__title
+                max-width: 100%
+    .subscribe
+        &__wrap
+            &::before
+                display: none
+            &::after
+                content: url(../img/Oval-mobile.png)
 @media ( min-width: 992px )
     .header
         &-wrap
@@ -135,7 +176,22 @@
                     color: $light-color
                     background-color: $default-color
                     transition: 300ms
-
+    .blog
+        &__btn:hover
+            background-color: $default-color
+            color: $light-color
+            transition: 300ms
+        &-right
+            &__btn::after
+                content: ""
+                display: block
+                height: 2px
+                width: 0%
+                background-color: $default-color
+                transition: width 0.3s ease-in-out
+            &__btn:hover
+                &:after
+                    width: 100%
 @media ( max-width: 768px )
     @keyframes nav-wrap
         0%
@@ -464,6 +520,60 @@
                     height: 22px
                 &_18
                     height: 18px
+    .blog
+        &__wrap
+            padding: 52px 0 124px
+        &__title
+            text-align: center
+            font-size: 28px
+            line-height: 36px
+            margin-bottom: 48px
+            max-width: 100%
+        &__btn
+            top: auto
+            bottom: 45px
+            right: 50%
+            transform: translateX(50%)
+            min-width: 159px
+            max-width: 100%
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: normal
+        &-left
+            &__img
+                width: 100%
+                height: 180px
+                margin-bottom: 18px
+            &__title
+                font-size: 16px
+                line-height: 20px
+                margin-left: 0
+                margin-bottom: 11px
+            &__info
+                font-size: 12px
+                line-height: 24px
+                margin-left: 0
+        &-right
+            &__card:not(:last-child)
+                margin-bottom: 28px
+            &__img
+                height: 90px
+                width: 90px
+                margin-right: 23px
+            &__date
+                font-size: 10px
+                line-height: 20px
+                margin-bottom: 6px
+                margin-top: 0
+            &__title
+                font-size: 14px
+                line-height: 20px
+                letter-spacing: normal
+                margin-bottom: 4px
+            &__btn
+                font-size: 10px
+                line-height: 20px
+                letter-spacing: normal
 @media ( max-width: 380px )
     .main
         &-content
@@ -482,6 +592,10 @@
     .authors
         &__description
             max-width: 280px
+    .blog
+        &-left
+            &__img
+                height: 120px
 @media ( max-width: 340px )
     .main
         &-content

@@ -75,3 +75,20 @@ const unreleasedSwiper = new Swiper(".unreleased__slider", {
     },
   },
 });
+
+$(".form").each(function () {
+  $(this).validate({
+    rules: {
+      email: {
+        pattern: /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i,
+      },
+    },
+    messages: {
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com",
+        pattern: "Format of email should be: name@domain.com",
+      },
+    },
+  });
+});
