@@ -107,6 +107,9 @@
                 display: none
             &::after
                 content: url(../img/Oval-mobile.png)
+                left: -60%
+                bottom: 23%
+
 @media ( min-width: 992px )
     .header
         &-wrap
@@ -192,6 +195,10 @@
             &__btn:hover
                 &:after
                     width: 100%
+    .subscribe
+        &__btn:hover
+            background-color: darken($bright-color, 7%)
+            transition: 300ms
 @media ( max-width: 768px )
     @keyframes nav-wrap
         0%
@@ -440,7 +447,31 @@
     .brands
         &__img:nth-child(n+7)
             display: none
-
+    .subscribe
+        &__wrap
+        &__form
+            height: 117px
+            width: 272px
+            background: #fff
+            border-radius: 8px
+            z-index: 30
+        &__input
+            height: 50%
+            border: none
+            padding-right: 10px
+        &__icon
+            top: 20%
+        &__btn
+            top: auto
+            left: 4px
+            right: 4px
+            bottom: 4px
+            width: 97%
+            padding-top: 10px
+            padding-bottom: 10px
+            cursor: pointer
+    .error
+        margin-bottom: 66px
 @media ( max-width: 576px )
     .container
         max-width: 89%
@@ -574,6 +605,32 @@
                 font-size: 10px
                 line-height: 20px
                 letter-spacing: normal
+
+    .subscribe
+        background-color: $default-color
+        overflow: hidden
+        &__wrap
+            padding-top: 26px
+            padding-bottom: 48px
+            padding-right: 0
+            padding-left: 0
+            overflow: visible
+            &::after
+                left: -145%
+                bottom: 38%
+        &__title
+            font-size: 28px
+            line-height: 36px
+            margin-bottom: 32px
+            max-width: 75%
+        &__form
+            margin-top: 0
+            width: 100%
+        &__btn
+            top: 60px
+            width: 88%
+            height: 44px
+            margin: 0px auto
 @media ( max-width: 380px )
     .main
         &-content
